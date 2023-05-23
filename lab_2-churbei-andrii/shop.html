@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initialscale=1.0, maximum-scale=3.0, minimum-scale=0.5">
+  <title>Магазин</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="shop.css">
+</head>
+
+
+<body>
+  <div class="container1">
+    <div class="navbar">
+      <img src="images/logo.svg" class="logo" alt="logo"></button>
+      <nav>
+        <ul>
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="shop.html">Магазин</a></li>
+        </ul>
+      </nav>
+      <img src="images/cart.png" class="cart-icon">
+    </div>
+
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+          <div  style="float: left;">
+              <button id="closeBtn" class="close" onclick="close()">&times;</button>
+          </div>
+            <p>Please subscribe to..</p>
+              <button onclick="subscribe()" class="btn btn-success">Subscribe</button>
+      </div>
+  </div>
+  <div id="modal-adv">
+    <div class="modal-content-adv">
+      <span class="close-adv" id="closeBtn-adv">&times;</span>
+      <h2>Реклама</h2>
+      <p>Тут може бути ваша рекламна інформація.</p>
+      <p id="timer-adv"></p>
+    </div>
+  </div>
+
+      <div id="knopka" class="m-3">
+          <div id="filters" class="ml-7">
+              <button onclick="getElements()">Все</button>
+              <button onclick="getElements(1)">Кросівки</button>
+              <button onclick="getElements(2)">Футболки</button>
+              <button onclick="getElements(3)">Носки</button>
+              <button onclick="getElements(4)">Аксесуари</button>
+          </div>
+          <div id="container" class="p-2">
+              <div id="container" class="p-3">
+              </div>
+          </div>
+      </div>
+
+      <button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
+  
+      <script src="script.js" async defer></script>
+
+
+      
+</body>
+
+</html>

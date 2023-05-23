@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initialscale=1.0, maximum-scale=3.0, minimum-scale=0.5">
+  <title>Puma</title>
+  <link href="https://fonts.googleapis.com/css2?
+    family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js" async defer></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+  <div class="container">
+    <div class="navbar">
+      <img src="images/logo.svg" class="logo" alt="logo">
+      <nav>
+        <ul>
+          <li><a href="#home">Головна</a></li>
+          <li><a href="shop.html">Магазин</a></li>
+        </ul>
+      </nav>
+      <img src="images/cart.png" class="cart-icon">
+    </div>
+
+    <div class="row" id="home">
+      <div class="col">
+        <h1>Puma</h1>
+        <p class="p1">Придбати товари ви можете в Магазин</p>
+        <a href="shop.html" class="button-explore">Відкрити</a>
+        </div>
+  </div>
+  <div id="subscription-modal" class="modal">
+    <div class="modal-content">
+      <h2>Підписка на повідомлення</h2>
+      <p>Підпишіться на наш сайт, щоб отримувати оновлення та спеціальні пропозиції:</p>
+      <button id="accept-button">Прийняти</button>
+      <button id="reject-button">Відхилити</button>
+    </div>
+  </div>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
+
+</body>
+
+</html>
